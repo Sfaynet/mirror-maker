@@ -1,4 +1,4 @@
-FROM bitnami/kafka:2
+FROM bitnami/kafka:latest
 USER root
 RUN install_packages gettext
 
