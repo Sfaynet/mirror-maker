@@ -30,3 +30,6 @@ config.storage.replication.factor=1
 # replication.policy.separator = _
 # sync.topic.acls.enabled = false
 # emit.heartbeats.interval.seconds = 5
+
+A.group.id = ${GROUP_ID}
+B.group.id = ${GROUP_ID}
