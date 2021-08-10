@@ -15,6 +15,7 @@ ENV SOURCE "localhost:9092"
 ENV GROUP_ID mmgroupidX
 ENV CLIENT_ID mmclientidX
 ENV SYNC_GROUP_OFFSET_ENABLED false
+ENV KAFKA_HEAP_OPTS="-Xms1024m -Xmx1024m"
 
 USER 1234
 CMD /opt/mirrormaker/run.sh
