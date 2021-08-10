@@ -1,11 +1,11 @@
-clusters = A, B
+clusters = ${NAME_SOURCE}, B
 
-A.bootstrap.servers = ${SOURCE}
-B.bootstrap.servers = ${DESTINATION}
+${NAME_SOURCE}.bootstrap.servers = ${SOURCE}
+${NAME_DESTINATION}.bootstrap.servers = ${DESTINATION}
 
-A->B.enabled = true
+${NAME_SOURCE}->${NAME_DESTINATION}.enabled = true
 
-A->B.topics = ${TOPICS}
+${NAME_SOURCE}->${NAME_DESTINATION}.topics = ${TOPICS}
 
 replication.policy.separator =
 source.cluster.alias = 
@@ -31,10 +31,10 @@ config.storage.replication.factor=1
 # sync.topic.acls.enabled = false
 # emit.heartbeats.interval.seconds = 5
 
-A.group.id = consumer_${GROUP_ID}
-B.group.id = consumer_${GROUP_ID}
+${NAME_SOURCE}.group.id = consumer_${GROUP_ID}
+${NAME_DESTINATION}.group.id = consumer_${GROUP_ID}
 
 sync.group.offsets.enabled = ${SYNC_GROUP_OFFSET_ENABLED}
 
-A.client.id = consumer_${GROUP_ID}_${CLIENT_ID}
-B.client.id = producer_${GROUP_ID}_${CLIENT_ID}
+${NAME_SOURCE}.client.id = consumer_${GROUP_ID}_${CLIENT_ID}
+${NAME_DESTINATION}.client.id = producer_${GROUP_ID}_${CLIENT_ID}
