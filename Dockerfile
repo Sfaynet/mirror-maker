@@ -12,7 +12,8 @@ RUN chown 1234 /var/run/mirrormaker
 ENV TOPICS .*
 ENV DESTINATION "source-cluster:9092"
 ENV SOURCE "localhost:9092"
-ENV GROUP_ID mmX
+ENV GROUP_ID mmgroupidX
+ENV CLIENT_ID mmclientidX
 ENV SYNC_GROUP_OFFSET_ENABLED false
 
 USER 1234

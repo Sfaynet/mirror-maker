@@ -33,4 +33,8 @@ config.storage.replication.factor=1
 
 A.group.id = ${GROUP_ID}
 B.group.id = ${GROUP_ID}
+
 sync.group.offsets.enabled = ${SYNC_GROUP_OFFSET_ENABLED}
+
+A.client.id = ${CLIENT_ID}
+B.client.id = ${CLIENT_ID}
