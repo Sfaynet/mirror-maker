@@ -12,6 +12,7 @@ RUN chown 1234 /var/run/mirrormaker
 ENV TOPICS .*
 ENV DESTINATION "source-cluster:9092"
 ENV SOURCE "localhost:9092"
+ENV GROUP_ID mmX
 
 USER 1234
 CMD /opt/mirrormaker/run.sh
