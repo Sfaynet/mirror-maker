@@ -1,4 +1,4 @@
-clusters = ${NAME_SOURCE}, B
+clusters = ${NAME_SOURCE}, ${NAME_DESTINATION}
 
 ${NAME_SOURCE}.bootstrap.servers = ${SOURCE}
 ${NAME_DESTINATION}.bootstrap.servers = ${DESTINATION}
