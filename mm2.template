@@ -31,10 +31,10 @@ config.storage.replication.factor=1
 # sync.topic.acls.enabled = false
 # emit.heartbeats.interval.seconds = 5
 
-A.group.id = ${GROUP_ID}
-B.group.id = ${GROUP_ID}
+A.group.id = consumer_${GROUP_ID}
+B.group.id = consumer_${GROUP_ID}
 
 sync.group.offsets.enabled = ${SYNC_GROUP_OFFSET_ENABLED}
 
-A.client.id = ${CLIENT_ID}
-B.client.id = ${CLIENT_ID}
+A.client.id = consumer_${GROUP_ID}_${CLIENT_ID}
+B.client.id = producer_${GROUP_ID}_${CLIENT_ID}
