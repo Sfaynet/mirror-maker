@@ -13,6 +13,7 @@ ENV TOPICS .*
 ENV DESTINATION "source-cluster:9092"
 ENV SOURCE "localhost:9092"
 ENV GROUP_ID mmX
+ENV SYNC_GROUP_OFFSET_ENABLED false
 
 USER 1234
 CMD /opt/mirrormaker/run.sh
