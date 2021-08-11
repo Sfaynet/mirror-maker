@@ -34,11 +34,12 @@ config.storage.replication.factor=1
 ${NAME_SOURCE}.group.id = consumer_${GROUP_ID}
 ${NAME_DESTINATION}.group.id = consumer_${GROUP_ID}
 
+# Синхронизирует оффсеты групп консьюмеров, зависит от emit.checkpoints.enabled = true и emit.checkpoints.interval.seconds = 60
 ${NAME_SOURCE}->${NAME_DESTINATION}.sync.group.offsets.enabled = ${SYNC_GROUP_OFFSET_ENABLED}
 
 ${NAME_SOURCE}.client.id = consumer_${GROUP_ID}_${CLIENT_ID}
 ${NAME_DESTINATION}.client.id = producer_${GROUP_ID}_${CLIENT_ID}
 
-# Время через которое заработает резервный MM2, зависит от emit.checkpoints.enabled = true и emit.checkpoints.interval.seconds = 60
+# Время через которое заработает резервный MM2
 ${NAME_SOURCE}.scheduled.rebalance.max.delay.ms = ${SCHEDULED_REBALANCE_MAX_DELAY_MS}
 ${NAME_DESTINATION}.scheduled.rebalance.max.delay.ms = ${SCHEDULED_REBALANCE_MAX_DELAY_MS}
