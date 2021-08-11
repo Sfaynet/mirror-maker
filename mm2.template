@@ -45,4 +45,4 @@ ${NAME_SOURCE}.scheduled.rebalance.max.delay.ms = ${SCHEDULED_REBALANCE_MAX_DELA
 ${NAME_DESTINATION}.scheduled.rebalance.max.delay.ms = ${SCHEDULED_REBALANCE_MAX_DELAY_MS}
 
 # README
-# * новые группы синхронизируются через 5-7-9 минут после создания (лучше подождать больше)
+# * новые группы с офсфетами синхронизируются через 5-7-9 минут после создания (лучше подождать больше)
