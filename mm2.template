@@ -39,3 +39,5 @@ sync.group.offsets.enabled = ${SYNC_GROUP_OFFSET_ENABLED}
 ${NAME_SOURCE}.client.id = consumer_${GROUP_ID}_${CLIENT_ID}
 ${NAME_DESTINATION}.client.id = producer_${GROUP_ID}_${CLIENT_ID}
 
+${NAME_SOURCE}.scheduled.rebalance.max.delay.ms = ${SCHEDULED_REBALANCE_MAX_DELAY_MS}
+${NAME_DESTINATION}.scheduled.rebalance.max.delay.ms = ${SCHEDULED_REBALANCE_MAX_DELAY_MS}
