@@ -43,3 +43,6 @@ ${NAME_DESTINATION}.client.id = producer_${GROUP_ID}_${CLIENT_ID}
 # Время через которое заработает резервный MM2
 ${NAME_SOURCE}.scheduled.rebalance.max.delay.ms = ${SCHEDULED_REBALANCE_MAX_DELAY_MS}
 ${NAME_DESTINATION}.scheduled.rebalance.max.delay.ms = ${SCHEDULED_REBALANCE_MAX_DELAY_MS}
+
+# README
+# * новые группы синхронизируются через 5-7-9 минут после создания (лучше подождать больше)
