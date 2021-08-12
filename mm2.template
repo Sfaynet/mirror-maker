@@ -32,13 +32,13 @@ config.storage.replication.factor=1
 # emit.heartbeats.interval.seconds = 5
 
 # Задаем groupid
-${NAME_SOURCE}.group.id = consumer_${GROUP_ID}
+#${NAME_SOURCE}.group.id = consumer_${GROUP_ID}
 ${NAME_SOURCE}.consumer.group.id = consumer_${GROUP_ID}
-${NAME_DESTINATION}.group.id = consumer_${GROUP_ID}
+#${NAME_DESTINATION}.group.id = consumer_${GROUP_ID}
 
 # Задаем clientid
-${NAME_SOURCE}.client.id = consumer_${GROUP_ID}_${CLIENT_ID}
-${NAME_DESTINATION}.client.id = producer_${GROUP_ID}_${CLIENT_ID}
+#${NAME_SOURCE}.client.id = consumer_${GROUP_ID}_${CLIENT_ID}
+#${NAME_DESTINATION}.client.id = producer_${GROUP_ID}_${CLIENT_ID}
 
 # Синхронизирует оффсеты групп консьюмеров, зависит от emit.checkpoints.enabled = true
 ${NAME_SOURCE}->${NAME_DESTINATION}.sync.group.offsets.enabled = ${SYNC_GROUP_OFFSET_ENABLED}
