@@ -45,9 +45,6 @@ ${NAME_SOURCE}->${NAME_DESTINATION}.sync.group.offsets.enabled = ${SYNC_GROUP_OF
 ${NAME_SOURCE}->${NAME_DESTINATION}.sync.group.offsets.interval.seconds = ${EMIT_CHECKPOINTS_INTERVAL_SECONDS}
 ${NAME_SOURCE}->${NAME_DESTINATION}.emit.checkpoints.interval.seconds = ${EMIT_CHECKPOINTS_INTERVAL_SECONDS}
 
-
-
-
 # Если у группы потребителя еще нет оффсета, то earliest позволит начать читать с начала топика, latest - с конца
 ${NAME_SOURCE}.consumer.auto.offset.reset = ${AUTO_OFFSET_RESET}
 
@@ -57,3 +54,11 @@ ${NAME_DESTINATION}.scheduled.rebalance.max.delay.ms = ${SCHEDULED_REBALANCE_MAX
 
 # README
 # * новые группы с офсфетами синхронизируются через 5-7-9 минут после создания (лучше подождать больше)
+
+
+refresh.topics.interval.seconds=10
+refresh.groups.interval.seconds=10
+
+
+${NAME_SOURCE}.offset.storage.topic = mm2-offsets-${GROUP_ID}.${NAME_SOURCE}.internal
+${NAME_DESTINATION}.offset.storage.topic = mm2-offsets-${GROUP_ID}.${NAME_DESTINATION}.internal
