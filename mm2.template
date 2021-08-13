@@ -62,3 +62,9 @@ refresh.groups.interval.seconds=10
 
 ${NAME_SOURCE}.offset.storage.topic = mm2-offsets-${GROUP_ID}.${NAME_SOURCE}.internal
 ${NAME_DESTINATION}.offset.storage.topic = mm2-offsets-${GROUP_ID}.${NAME_DESTINATION}.internal
+
+${NAME_SOURCE}.config.storage.topic = mm2-configs-${GROUP_ID}.${NAME_SOURCE}.internal
+${NAME_DESTINATION}.config.storage.topic = mm2-configs-${GROUP_ID}.${NAME_DESTINATION}.internal
+
+${NAME_SOURCE}.status.storage.topic = mm2-status-${GROUP_ID}.${NAME_SOURCE}.internal
+${NAME_DESTINATION}.status.storage.topic = mm2-status-${GROUP_ID}.${NAME_DESTINATION}.internal
