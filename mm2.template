@@ -28,7 +28,7 @@ config.storage.replication.factor=2
 
 # customize as needed
 # replication.policy.separator = _
-# sync.topic.acls.enabled = false
+sync.topic.acls.enabled = false
 # emit.heartbeats.interval.seconds = 5
 
 # Задаем groupid
